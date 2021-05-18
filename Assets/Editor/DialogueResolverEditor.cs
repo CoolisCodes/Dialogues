@@ -53,6 +53,13 @@ public class DialogueResolverEditor : Editor
 
         EditorGUILayout.Space();
 
+        GUIStyle s = new GUIStyle(EditorStyles.toolbarTextField);
+
+        s.normal.textColor = Color.cyan;
+
+        EditorGUILayout.BeginVertical("Box");
+        GUILayout.Label("User Options", s);
+
         EditorGUILayout.BeginHorizontal();
 
         if (dialogueResolver.currentDialogue.IsActive)
@@ -65,6 +72,8 @@ public class DialogueResolverEditor : Editor
         }
 
         EditorGUILayout.EndHorizontal();
+
+        EditorGUILayout.EndVertical();
 
         EditorGUILayout.Space();
 
