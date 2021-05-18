@@ -342,17 +342,34 @@ MonoBehaviour:
   currentDialogue:
     characterName: 
     nextCharacterName: 
-    dialogueScentences: []
+    dialogueAnswers: []
   dialogueNodes:
-  - characterName: nikos
-    nextCharacterName: coolis
-    dialogueScentences:
-    - ii am the one
-    - and only
-  - characterName: coolis
+  - characterName: Nick
+    nextCharacterName: Coolis
+    dialogueAnswers:
+    - Ill give you food
+    - Ill give you water
+    - Ill give you medicine
+  - characterName: Coolis
+    nextCharacterName: Electra
+    dialogueAnswers:
+    - I have a bed to sell
+    - I also sell a sofa
+  - characterName: Electra
+    nextCharacterName: Oliver
+    dialogueAnswers:
+    - Im running out of Ideas
+    - Random text from now on
+    - Oh! I can sell you my bike
+    - I told you.. Dont judge me...
+    - Im not a Game director :'(
+  - characterName: Oliver
+    nextCharacterName: Buddy
+    dialogueAnswers:
+    - Mew
+    - Mew mew mew
+  - characterName: Buddy
     nextCharacterName: 
-    dialogueScentences:
-    - ela kai
-    - pou eisai
-  serializedDialogue: "{\n    \"characterName\": \"kwstas\",\n    \"nextCharacterName\":
-    \"nikos\",\n    \"dialogueScentences\": [\"eeeeee mwre!!\"]\n}"
+    dialogueAnswers:
+    - Bark!
+  serializedDialogue: 
